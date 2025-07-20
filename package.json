@@ -1,9 +1,10 @@
 {
-  "name": "kwk-scrollytelling-template",
+  "name": "data-challenge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://rrajesh222.github.io/datachallenge",
+  "repository": "data-challenge",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
