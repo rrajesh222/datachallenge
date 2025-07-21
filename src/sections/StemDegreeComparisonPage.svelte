@@ -115,8 +115,11 @@ let showAnimatedImage = false;
     <div class="name">
    This website is part of the Kode With Klossy (KWK) and <a href="https://blackwealthdata.org/">Black Wealth Data Center (BWDC)</a>  Data Challenge.
     </div>
+    
 </ArticleText>
-
+<div class = "heart">
+<img src="heart.png">
+</div>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Exo:700');
 @import url('https://fonts.googleapis.com/css?family=Abel');
@@ -124,7 +127,17 @@ let showAnimatedImage = false;
     justify-content: center;
    display: block;
    margin: 0 auto;
+
 }
+.heart img{
+   
+ display: block;
+ margin: 0 auto;
+ width: 100px;
+ padding-bottom: 10px;
+
+  
+ }
 .check strong{
     color:#db94ca;
 }
