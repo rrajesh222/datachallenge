@@ -20,23 +20,23 @@
   
   <div class="cards">
   <div class="card1">
-    <img src="dist/asianBlue.jpg" alt="asian">
+    <img src="asianBlue.jpg" alt="asian">
     
    
   </div>
   
   <div class="card2">
-    <img src="dist/whiteBlue.jpg" alt="white">
+    <img src="whiteBlue.jpg" alt="white">
    
  
   </div>
   
   <div class="card3">
-    <img src="dist/hispanicBlue.jpg" alt="hispanic">
+    <img src="hispanicBlue.jpg" alt="hispanic">
    
   </div>
   <div class="card4">
-    <img src="dist/blackRed.jpg" alt="black">
+    <img src="blackRed.jpg" alt="black">
     
   </div>
 </div>

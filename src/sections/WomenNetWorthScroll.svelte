@@ -43,8 +43,8 @@ if(headingRef){
 <div>
     <Scroller layout="right">
         {#snippet sticky()}
-        <img src="dist/womenDataBach.png" alt="Woman Data" style="width: 700px; height:auto"> 
-           <img src="dist/womanSuit.jpeg" alt="Man Image" style="width: 700px; height:auto">  
+        <img src="womenDataBach.png" alt="Woman Data" style="width: 700px; height:auto"> 
+           <img src="womanSuit.jpeg" alt="Man Image" style="width: 700px; height:auto">  
             <div>
                 <!-- <p>
                     You can use Svelte to add and remove data from a Highcharts

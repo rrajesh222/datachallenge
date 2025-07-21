@@ -11,8 +11,8 @@
 <div>
     <Scroller layout="left">
         {#snippet sticky()}
-        <img src="dist/menDatBach.png" alt="Man Data" style="width: 700px; height:auto"> 
-           <img src="dist/manSuit.jpeg" alt="Man Image" style="width: 700px; height:auto">  
+        <img src="menDatBach.png" alt="Man Data" style="width: 700px; height:auto"> 
+           <img src="manSuit.jpeg" alt="Man Image" style="width: 700px; height:auto">  
             <div>
                
             </div>

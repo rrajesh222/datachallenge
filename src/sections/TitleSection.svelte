@@ -15,7 +15,7 @@
 
 
 </script>
-<img src="dist/heart.png">
+<img src="heart.png">
 
 <TitleCard {title} {subtitle} />
 
