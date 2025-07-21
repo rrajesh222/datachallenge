@@ -5,7 +5,7 @@
     
     
     
-    const title = "Unequal Returns: BWDC x KWK Data Challenge";
+    const title = "Unequal Returns";
     const subtitle = "Bringing attention to disparities in wages and highlighting career gaps";
 
    

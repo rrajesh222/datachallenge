@@ -3,13 +3,31 @@
     import Scroller from "../lib/Scroller.svelte";
     import ArticleText from "../lib/ArticleText.svelte";
   import { onMount } from "svelte";
+  import ObservedArticleText from "../lib/ObservedArticleText.svelte";
   export { typewriter };
+  let showTypewriter = false;
 
-let startTyping = false;
-let headingRef;
+function typewriterOnView(node) {
+    const observer = new IntersectionObserver((entries) =>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                node.dispatchEvent(new CustomEvent('startTypewriter'));
+            }
+        });
+    },{
+        threshold: 0.5
     
+    });
+    observer.observe(node);
 
-    function typewriter(node, {speed = 1}) {
+    return{
+        destroy(){
+            observer.unobserve(node);
+        }
+    };
+}
+
+  function typewriter(node, {speed = 1}) {
         const valid = node.childNodes.length == 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
         const text = node.textContent;
         const duration = text.length / (speed * 0.1);
@@ -24,21 +42,10 @@ let headingRef;
 
     }
 
-    onMount(() =>{
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    startTyping = true;
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.1 }
-        );
-if(headingRef){
-    observer.observe(headingRef);
-}
-       
-    });
+    function handleTypewriter(){
+        showTypewriter = true;
+    }
+
 </script>
 
 <div>
@@ -47,11 +54,7 @@ if(headingRef){
         <img src="womenDataBach.png" alt="Woman Data" style="width: 700px; height:auto"> 
            <img src="womanSuit.jpeg" alt="Man Image" style="width: 700px; height:auto">  
             <div>
-                <!-- <p>
-                    You can use Svelte to add and remove data from a Highcharts
-                    chart.
-                </p>
-               -->
+               
             </div>
         {/snippet}
 
@@ -60,11 +63,13 @@ if(headingRef){
           
 
             <ArticleText>
-                The Median Total Net Worth for Female Households with a a Bachelor's Degree or higher is between 40k - 250k
+                The Median Total Net Worth for Female Households with a a Bachelor's Degree or higher is between <strong>40k - 250k</strong>.
             </ArticleText>
 
+
+
             <ArticleText>
-               250k vs 748k...
+               40k vs 98k...
             </ArticleText>
 
             
@@ -72,15 +77,22 @@ if(headingRef){
     </Scroller>
 </div>
 
-<ArticleText>
+<ArticleText >
+    <div use:typewriterOnView on:startTypewriter={handleTypewriter}>
 
-    <h2 bind:this={headingRef} transition:typewriter={startTyping? { speed:0.01}: null}> 
-        Why is a man's Household Net Worth nearly 3 TIMES that of a woman's?</h2>
-</ArticleText>
+    {#if showTypewriter}
+    <h2 transition:typewriter={{ speed: 0.1 }}> Why is a Man's Household Net Worth nearly <strong> 3 TIMES </strong> that of a Woman's?</h2>
+    {/if}
+
+    </div> 
+</ArticleText> 
+    
 
 <ArticleText>
     The differences don't stop there.
 </ArticleText>
 <style>
-   
+   strong{
+    color:#db94ca;
+}
 </style>
