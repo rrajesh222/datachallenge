@@ -5,11 +5,11 @@
   import { fade } from "svelte/transition";
 let showImage = true;
 let showAnimatedImage = false;
-  onMount(()=>{
-    setTimeout(() => {
-        showImage = false;
-    }, 3000);
-  });
+//   onMount(()=>{
+//     setTimeout(() => {
+//         showImage = false;
+//     }, 3000);
+//   });
 
   function animateOnView(node){
     const observer = new IntersectionObserver((entries) =>{
@@ -19,10 +19,10 @@ let showAnimatedImage = false;
             }
         });
     },{
-        threshold:0.3
+        threshold:0.5
     
     });
-    observer.unobserve(node);
+    observer.observe(node);
    
    
     return{
@@ -33,7 +33,7 @@ let showAnimatedImage = false;
   }
 
   function handleImageAnimation(){
-    showAnimatedImage = true;
+    showImage = false;
   }
 
 
@@ -101,7 +101,7 @@ let showAnimatedImage = false;
 
 <div  use:animateOnView on:startAnimation={handleImageAnimation}>
 {#if showImage}
-<img class = "disp" src="blackRed.jpg" alt="image" transition:fade />
+    <img class = "disp" src="blackRed.jpg" alt="image" transition:fade={{duration: 2000, delay: 100}} />
 {/if}
 </div>
 
@@ -122,7 +122,8 @@ let showAnimatedImage = false;
 @import url('https://fonts.googleapis.com/css?family=Abel');
 .disp{
     justify-content: center;
-    padding-left: 400px;
+   display: block;
+   margin: 0 auto;
 }
 .check strong{
     color:#db94ca;
