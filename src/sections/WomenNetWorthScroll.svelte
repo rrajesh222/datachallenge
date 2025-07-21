@@ -3,6 +3,7 @@
     import Scroller from "../lib/Scroller.svelte";
     import ArticleText from "../lib/ArticleText.svelte";
   import { onMount } from "svelte";
+  export { typewriter };
 
 let startTyping = false;
 let headingRef;
@@ -73,7 +74,7 @@ if(headingRef){
 
 <ArticleText>
 
-    <h2 bind:this={headingRef} transition:typewriter={startTyping? { speed: 50}: null}> 
+    <h2 bind:this={headingRef} transition:typewriter={startTyping? { speed:0.01}: null}> 
         Why is a man's Household Net Worth nearly 3 TIMES that of a woman's?</h2>
 </ArticleText>
 

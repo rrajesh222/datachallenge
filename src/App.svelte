@@ -23,15 +23,15 @@ import WomenNetWorthScroll from "./sections/WomenNetWorthScroll.svelte";
 <WomenNetWorthScroll />
 
    <StemDegreeComparisonPage />
-  <LeftAlignedExample /> 
+  <!-- <LeftAlignedExample /> 
 
-  <RightAlignedExample />
-  <ImageExample />
- <!-- <NetWorth /> -->
+  <RightAlignedExample /> -->
+  <!-- <ImageExample />
+ <NetWorth /> -->
 
-  <IntersectionObserverSectionCard />
+  <!-- <IntersectionObserverSectionCard />
   <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample /> 
+  <IntersectionObserverListExample />  --> 
 </main>

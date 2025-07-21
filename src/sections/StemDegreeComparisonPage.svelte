@@ -10,11 +10,10 @@
 
 <div class="title">
     <h1>Women in STEM Fields</h1>
-    <h2>Hover over each card to see STEM vs non-STEM Employment Rates from 2019 to 2021 Among 25-35 Year Old Women with a STEM Degree</h2>
+    <h2>Hover over each card to see STEM vs non-STEM Employment Rates from 2019 to 2021 Among 25-35 Year Old Women with a STEM Degree presented. Data is from the Black Wealth Data Center, <a href="https://blackwealthdata.org/explore/education#EDU-02" target="_blank">Education Section</a></h2>
   </div>
 
-  <Scroller layout="right">
-    {#snippet sticky()}
+  
 <div class ="ethnicty">
 
   
@@ -44,25 +43,32 @@
   </div>
 </div>
 
-{/snippet}
 
 
-{#snippet scrolly()}
+
+
 <ArticleText>
     In a day and age when science and technology is becoming more relevant, why are less black women with STEM degrees employed in STEM careers?
 </ArticleText>
 <ArticleText>
     It is up to us to build a more equitable and diverse future filled with 
-    opportunities and support to end the wage gap and motivate more Black women to pursue STEM careers.
+    opportunities and support to end the wage gap while getting different perspectives.
 </ArticleText>
-{/snippet}
-</Scroller>
+<ArticleText>
+   We need to make sure that essential voices don't simply disappear in the STEM world.
+</ArticleText>
+<ArticleText>
+    Thank you for joining me on this journey and I hope that you learned more about our current world and are inspired to move towards an equal future - Rithika
+</ArticleText>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Exo:700');
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
-
+a{
+   color: #db94ca;
+   }
 .ethnicity{
     padding: 4rem 1rem;
     background-color: #dfe6e9;
