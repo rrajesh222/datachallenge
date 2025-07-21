@@ -2,6 +2,7 @@
     import { fade, fly } from "svelte/transition";
     import Scroller from "../lib/Scroller.svelte";
     import ObservedArticleText from "../lib/ObservedArticleText.svelte";
+    
 
     let duckIsVisible = $state(false);
 

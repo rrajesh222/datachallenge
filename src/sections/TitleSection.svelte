@@ -5,8 +5,8 @@
     
     
     
-    const title = "BWDC x KWK Data Challenge";
-    const subtitle = "Bringing attention to disparities amongst genders and highlighting career gaps";
+    const title = "Unequal Returns: BWDC x KWK Data Challenge";
+    const subtitle = "Bringing attention to disparities in wages and highlighting career gaps";
 
    
 
@@ -15,8 +15,17 @@
 
 
 </script>
+<img src="dist/heart.png">
 
 <TitleCard {title} {subtitle} />
+
+<style>
+  img{
+   
+    width:100px;
+    height:auto;
+  }
+</style>
 
 
 

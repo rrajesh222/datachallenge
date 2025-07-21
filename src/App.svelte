@@ -9,22 +9,29 @@
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
   import TestSection from "./sections/TestSection.svelte";
- 
+ import StemDegreeComparisonPage from "./sections/StemDegreeComparisonPage.svelte";
 
+import NetworthScroll from "./sections/NetworthScroll.svelte";
+import WomenNetWorthScroll from "./sections/WomenNetWorthScroll.svelte";
 </script>
 
 <main>
 
     
 <TitleSection />
-   <RightAlignedExample />
-  <LeftAlignedExample />
+<NetworthScroll />
+<WomenNetWorthScroll />
+
+   <StemDegreeComparisonPage />
+  <LeftAlignedExample /> 
+
+  <RightAlignedExample />
   <ImageExample />
-  
+ <!-- <NetWorth /> -->
 
   <IntersectionObserverSectionCard />
   <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample />
+  <IntersectionObserverListExample /> 
 </main>
