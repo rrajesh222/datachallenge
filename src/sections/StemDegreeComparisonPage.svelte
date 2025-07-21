@@ -100,9 +100,9 @@ let showAnimatedImage = false;
 </ArticleText>
 
 <div  use:animateOnView on:startAnimation={handleImageAnimation}>
-{#if showImage}
-    <img class = "disp" src="blackRed.jpg" alt="image" transition:fade={{duration: 2000, delay: 100}} />
-{/if}
+<!-- {#if showImage} -->
+    <img class = "disp" src="blackRed.jpg" alt="image" style="opacity: {showImage ? 1 : 0}; transition: opacity 3s ease-out;"/>
+<!-- {/if} -->
 </div>
 
 <ArticleText>
@@ -166,6 +166,7 @@ body {
 h2{
    color:rgb(250, 215, 250);
   font-family:"IBM Plex Serif";
+  padding: 50px;
 }
 .card1 {
   text-align:center;
