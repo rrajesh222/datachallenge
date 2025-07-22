@@ -22,12 +22,12 @@
 <style>
   img{
    
-    display: block;
-   margin: 0 auto;
-   width: 100px;
-   padding-top: 10px;
+   display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 10px;
 
-  }
+ }
 </style>
 
 
