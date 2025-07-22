@@ -1,24 +1,9 @@
 <script>
 
 
-
-
-    let { title, subtitle } = $props();
-
-    export function typewriter(node, {speed = 1}) {
-        const valid = node.childNodes.length == 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
-        const text = node.textContent;
-        const duration = text.length / (speed * 0.1);
-
-        return{
-            duration,
-            tick: (t) => {
-                const i = Math.trunc(text.length * t);
-                node.textContent = text.slice(0, i);
-            }
-        };
-
-    }
+import { typewriter } from './transitions.js'; // Import the transition
+    
+    let { title, subtitle } = $props()
 </script>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Imperial+Script&family=Parisienne&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Gruppo&family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yeseva+One&display=swap" rel="stylesheet">
