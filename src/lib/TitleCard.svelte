@@ -1,5 +1,8 @@
 <script>
+  import { onMount } from "svelte";
 
+
+let showText = $state();
 
 
 
@@ -19,6 +22,10 @@
         };
 
     }
+
+    onMount(() => {
+        showText = true;
+    });
 </script>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Imperial+Script&family=Parisienne&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Gruppo&family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -32,7 +39,9 @@
        
     </div>
     <div>
+        {#if showText}
         <h2 transition:typewriter={{ speed: 0.1 }}> Scroll Below to Begin Your Discovery</h2>
+        {/if}
     </div>
 
 </div>
