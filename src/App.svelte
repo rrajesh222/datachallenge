@@ -2,7 +2,7 @@
 
   import TitleSection from "./sections/TitleSection.svelte";
  
-  import DisappearingDuckExample from "./sections/DisappearingDuckExample.svelte";
+
  
   import TestSection from "./sections/TestSection.svelte";
  import StemDegreeComparisonPage from "./sections/StemDegreeComparisonPage.svelte";
