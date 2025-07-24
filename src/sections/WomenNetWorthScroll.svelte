@@ -63,7 +63,7 @@ function typewriterOnView(node) {
           
 
             <ArticleText>
-                The Median Total Net Worth for Female Households with a a Bachelor's Degree or higher is between <strong>40k - 250k</strong>.
+                The Median Total Net Worth for Female Households with a Bachelor's Degree or higher is between <strong>40k - 250k</strong>.
             </ArticleText>
 
 

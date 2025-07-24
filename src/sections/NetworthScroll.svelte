@@ -27,7 +27,7 @@
           
 
             <ArticleText>
-                The Median Total Net Worth for Male Households with a a Bachelor's Degree or higher is between <strong>98k - 748k</strong>.
+                The Median Total Net Worth for Male Households with a Bachelor's Degree or higher is between <strong>98k - 748k</strong>.
             </ArticleText>
 
            
